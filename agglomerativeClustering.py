@@ -4,119 +4,60 @@ distance measure for agglomerative hierarchical clustering
 """
 __author__ = "Xichen Liu, Jeff Turgeon"
 
-import string
-from time import time
+import numpy as np
 import pandas as pd
 from sklearn.cluster import AgglomerativeClustering
-import numpy as np
-from matplotlib import pyplot as plt
-from sklearn import manifold, datasets
-
-digits = datasets.load_digits()
-X, y = digits.data, digits.target
-n_samples, n_features = X.shape
-
-np.random.seed(0)
-# ----------------------------------------------------------------------
-# Visualize the clustering
-def plot_clustering(X_red, labels, title = None):
-    x_min, x_max = np.min(X_red, axis = 0), np.max(X_red, axis = 0)
-    X_red = (X_red - x_min) / (x_max - x_min)
-
-    plt.figure(figsize = (6, 4))
-    for digit in digits.target_names:
-        plt.scatter(
-            *X_red[y == digit].T,
-            marker = f"${digit}$",
-            s = 50,
-            c = plt.cm.nipy_spectral(labels[y == digit] / 10),
-            alpha = 0.5,
-        )
-
-    plt.xticks([])
-    plt.yticks([])
-    if title is not None:
-        plt.title(title, size = 17)
-    plt.axis("off")
-    plt.tight_layout(rect = [0, 0.03, 1, 0.95])
-
-def plot_some():
-    # ----------------------------------------------------------------------
-    # 2D embedding of the digits dataset
-    print("Computing embedding")
-    X_red = manifold.SpectralEmbedding(n_components = 2).fit_transform(X)
-    print("Done.")
-
-    for linkage in ("ward", "average", "complete", "single"):
-        clustering = AgglomerativeClustering(linkage = linkage, n_clusters = 10)
-        t0 = time()
-        clustering.fit(X_red)
-        print("%s :\t%.2fs" % (linkage, time() - t0))
-
-        plot_clustering(X_red, clustering.labels_, "%s linkage" % linkage)
-
-    plt.show()
-
-    return
+from sklearn.preprocessing import StandardScaler
+import preComputation
+from sklearn.decomposition import PCA
+from time import time
 
 
 def main():
-    input_file = 'Mall_Customers.csv'
-    df = pd.read_csv(input_file, header = 0)
+    preComputation.pre_compute_dataset()
 
-    # convert gender to numeric data
-    df['Gender'] = df['Gender'].map(lambda x: 0 if x == 'Male' else x)
-    df['Gender'] = df['Gender'].map(lambda x: 1 if x == 'Female' else x)
+    df_mall_raw = pd.read_csv('Datasets/Cleaned_Mall_Customers.csv', header = 0)
+    mall_idx = df_mall_raw['CustomerID']
+    mall_data = df_mall_raw[['Gender', 'Age', 'Annual Income (k$)', 'Spending Score (1-100)']]
+    mall_data = StandardScaler().fit_transform(mall_data)
+    df_mall_norm = pd.DataFrame(data = mall_data, columns = ['Gender', 'Age', 'Annual Income (k$)',
+                                                             'Spending Score (1-100)'])
 
-    # display some basic info of dataset
-    original_header = list(df.columns.values)
-    print("Categories: ", end = "")
-    print(original_header)
-    print("\nTop 10 entries: ")
-    print(df.head(10))
-    print("\nShape of dateset: ", end = "")
-    print(df.shape)
+    df_cc_raw = pd.read_csv('Datasets/Cleaned_CC_GENERAL.csv', header = 0)
+    cc_idx = df_cc_raw['CUST_ID']
+    cc_data = df_cc_raw[['BALANCE', 'BALANCE_FREQUENCY', 'PURCHASES', 'ONEOFF_PURCHASES', 'INSTALLMENTS_PURCHASES',
+                         'CASH_ADVANCE', 'PURCHASES_FREQUENCY', 'ONEOFF_PURCHASES_FREQUENCY',
+                         'PURCHASES_INSTALLMENTS_FREQUENCY', 'CASH_ADVANCE_FREQUENCY', 'CASH_ADVANCE_TRX',
+                         'PURCHASES_TRX', 'PAYMENTS', 'PRC_FULL_PAYMENT', 'TENURE']]
+    cc_data = StandardScaler().fit_transform(cc_data)
+    df_cc_norm = pd.DataFrame(data = cc_data, columns = ['BALANCE', 'BALANCE_FREQUENCY', 'PURCHASES',
+                                                         'ONEOFF_PURCHASES', 'INSTALLMENTS_PURCHASES',
+                                                         'CASH_ADVANCE', 'PURCHASES_FREQUENCY',
+                                                         'ONEOFF_PURCHASES_FREQUENCY',
+                                                         'PURCHASES_INSTALLMENTS_FREQUENCY', 'CASH_ADVANCE_FREQUENCY',
+                                                         'CASH_ADVANCE_TRX', 'PURCHASES_TRX', 'PAYMENTS',
+                                                         'PRC_FULL_PAYMENT', 'TENURE'])
 
-    df_age_annual_income = df[['Age', 'Annual Income (k$)']].copy()
-    print(df_age_annual_income.head(10))
-    
-    # print("Computing embedding")
-    # embedded = manifold.SpectralEmbedding(n_components = 2).fit_transform(df_age_annual_income)
-    # print("Done.")
+    df_cccd_raw = pd.read_csv('Datasets/Cleaned_Credit_Card_Customer_Data.csv', header = 0)
+    cccd_idx = df_cccd_raw['Sl_No']
+    cccd_data = df_cccd_raw[['Avg_Credit_Limit', 'Total_Credit_Cards', 'Total_visits_bank',
+                             'Total_visits_online', 'Total_calls_made']]
+    cccd_data = StandardScaler().fit_transform(cccd_data)
+    df_cccd_norm = pd.DataFrame(data = cccd_data, columns = ['Avg_Credit_Limit', 'Total_Credit_Cards',
+                                                             'Total_visits_bank', 'Total_visits_online',
+                                                             'Total_calls_made'])
 
-    for linkage in ("ward", "average", "complete", "single"):
-        clustering = AgglomerativeClustering(linkage = linkage, n_clusters = 10)
-        t0 = time()
-        clustering.fit(df)
-        print(clustering.labels_)
-        print("%s :\t%.2fs" % (linkage, time() - t0))
+    preComputation.show_result(df_mall_norm, 'Mall Customer')
+    print('\n')
+    preComputation.show_result(df_cc_norm, 'CC General')
+    print('\n')
+    preComputation.show_result(df_cccd_raw, 'Credit Card')
 
-        # plt.figure(figsize = (6, 4))
-        # for label in clustering.labels_:
-        #     plt.scatter(
-        #         df_age_annual_income['Age'],
-        #         df_age_annual_income['Annual Income (k$)'],
-        #         marker = f"${label}$",
-        #         s = 50,
-        #         c = plt.cm.nipy_spectral(label * 10),
-        #         alpha = 0.5,
-        #     )
-
-        plt.xticks([])
-        plt.yticks([])
-
-        plt.show()
-    # 
-    #     plot_clustering(embedded, clustering.labels_, "%s linkage" % linkage)
-    # 
-    # plt.show()
-    # numpy_array = df.as_matrix()
-    # numeric_headers.reverse()
-    # reverse_df = df[numeric_headers]
-    # reverse_df.to_excel('path_to_file.xls')
-
-
-
+    # pca_df = PCA(n_components = 2).fit_transform(df_cc_norm)
+    # clustering = AgglomerativeClustering(affinity = "euclidean", linkage = "complete",
+    #                                      distance_threshold = 15, n_clusters = None)
+    # clustering.fit(pca_df)
+    # print(clustering.labels_.shape)
 
 
 if __name__ == '__main__':
