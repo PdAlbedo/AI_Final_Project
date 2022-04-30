@@ -8,26 +8,26 @@ import datasetProcessing
 
 
 def main():
-    #DatasetProcessing.clean_dataset()
+    # DatasetProcessing.clean_dataset()
 
-    cc_idx, cc_data = DatasetProcessing.extract_cc()
-    covid_idx, covid_data = DatasetProcessing.extract_covid()
-    cccd_idx, cccd_data = DatasetProcessing.extract_cccd()
-    mall_idx, mall_data = DatasetProcessing.extract_mall()
-    stc_idx, stc_data = DatasetProcessing.extract_stc()
-    wcd_idx, wcd_data = DatasetProcessing.extract_wcd()
+    cc_idx, cc_data = datasetProcessing.extract_cc()
+    covid_idx, covid_data = datasetProcessing.extract_covid()
+    cccd_idx, cccd_data = datasetProcessing.extract_cccd()
+    mall_idx, mall_data = datasetProcessing.extract_mall()
+    stc_idx, stc_data = datasetProcessing.extract_stc()
+    wcd_idx, wcd_data = datasetProcessing.extract_wcd()
 
-    DatasetProcessing.show_result(cc_data, 'CC General')
+    datasetProcessing.show_result(cc_data, 'CC General')
     print('\n')
-    DatasetProcessing.show_result(covid_data, 'COVID-19')
+    datasetProcessing.show_result(covid_data, 'COVID-19')
     print('\n')
-    DatasetProcessing.show_result(cccd_data, 'Credit Card')
+    datasetProcessing.show_result(cccd_data, 'Credit Card')
     print('\n')
-    DatasetProcessing.show_result(mall_data, 'Mall Customer')
+    datasetProcessing.show_result(mall_data, 'Mall Customer')
     print('\n')
-    DatasetProcessing.show_result(stc_data, 'Sales Transactions')
+    datasetProcessing.show_result(stc_data, 'Sales Transactions')
     print('\n')
-    DatasetProcessing.show_result(wcd_data, 'Wholesale')
+    datasetProcessing.show_result(wcd_data, 'Wholesale')
 
 
 if __name__ == '__main__':
