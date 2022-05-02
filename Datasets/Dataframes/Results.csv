@@ -1,0 +1,343 @@
+Name,Num of Dimensions,Linkage,Distance,Num of clusters,Silhouette Score,Calinski Harabasz Score,Davies-Bouldin Index,Runtime
+CC General,2,ward,euclidean,4,0.55,17336.59,0.65,2.21
+CC General,2,average,euclidean,1,,,,1.33
+CC General,2,average,manhattan,1,,,,1.23
+CC General,2,average,cosine,22,0.27,6025.35,2.27,1.92
+CC General,2,average,mahalanobis,2279,0.43,97392.44,0.35,3.34
+CC General,2,average,minkowski,1,,,,7.98
+CC General,2,average,mahalanobis,2279,0.43,97392.44,0.35,11.44
+CC General,2,complete,euclidean,1,,,,1.41
+CC General,2,complete,manhattan,1,,,,1.31
+CC General,2,complete,cosine,36,0.21,4089.27,3.31,2.05
+CC General,2,complete,mahalanobis,2692,0.43,167604.93,0.39,3.61
+CC General,2,complete,minkowski,1,,,,8.55
+CC General,2,complete,mahalanobis,2692,0.43,167604.93,0.39,12.49
+CC General,2,single,euclidean,1,,,,0.34
+CC General,2,single,manhattan,1,,,,0.27
+CC General,2,single,cosine,1,,,,0.74
+CC General,2,single,mahalanobis,1385,-0.17,292.44,0.42,2.62
+CC General,2,single,minkowski,1,,,,6.25
+CC General,2,single,mahalanobis,1385,-0.17,292.44,0.42,8.88
+CC General,3,ward,euclidean,5,0.52,11284.95,0.81,2.2
+CC General,3,average,euclidean,1,,,,1.37
+CC General,3,average,manhattan,1,,,,1.29
+CC General,3,average,cosine,122,0.32,3008.37,1.51,2.14
+CC General,3,average,mahalanobis,4393,0.36,78758.5,0.19,4.26
+CC General,3,average,minkowski,1,,,,10.16
+CC General,3,average,mahalanobis,4393,0.36,78758.5,0.19,14.44
+CC General,3,complete,euclidean,1,,,,1.42
+CC General,3,complete,manhattan,1,,,,1.37
+CC General,3,complete,cosine,262,0.23,2646.43,1.86,2.3
+CC General,3,complete,mahalanobis,4668,0.35,129023.41,0.21,4.38
+CC General,3,complete,minkowski,1,,,,10.54
+CC General,3,complete,mahalanobis,4668,0.35,129023.41,0.21,14.89
+CC General,3,single,euclidean,1,,,,0.33
+CC General,3,single,manhattan,1,,,,0.27
+CC General,3,single,cosine,4,-0.35,0.15,3.81,1.52
+CC General,3,single,mahalanobis,3877,0.1,552.44,0.23,3.37
+CC General,3,single,minkowski,1,,,,8.26
+CC General,3,single,mahalanobis,3877,0.1,552.44,0.23,11.58
+CC General,4,ward,euclidean,6,0.49,6416.65,0.79,2.3
+CC General,4,average,euclidean,1,,,,1.42
+CC General,4,average,manhattan,1,,,,1.39
+CC General,4,average,cosine,320,0.35,2121.19,0.85,2.28
+CC General,4,average,mahalanobis,5183,0.32,90582.26,0.14,4.64
+CC General,4,average,minkowski,1,,,,11.11
+CC General,4,average,mahalanobis,5183,0.32,90582.26,0.14,15.8
+CC General,4,complete,euclidean,1,,,,1.56
+CC General,4,complete,manhattan,1,,,,1.48
+CC General,4,complete,cosine,545,0.32,2703.43,0.98,2.41
+CC General,4,complete,mahalanobis,5437,0.3,143945.66,0.16,4.75
+CC General,4,complete,minkowski,1,,,,11.55
+CC General,4,complete,mahalanobis,5437,0.3,143945.66,0.16,16.38
+CC General,4,single,euclidean,1,,,,0.31
+CC General,4,single,manhattan,1,,,,0.27
+CC General,4,single,cosine,42,-0.52,0.33,2.27,1.49
+CC General,4,single,mahalanobis,4763,0.19,2962.85,0.14,3.7
+CC General,4,single,minkowski,1,,,,9.16
+CC General,4,single,mahalanobis,4763,0.19,2962.85,0.14,12.84
+COVID-19,2,ward,euclidean,11,0.55,1498.88,0.55,0.0
+COVID-19,2,average,euclidean,4,0.68,888.07,0.47,0.0
+COVID-19,2,average,manhattan,4,0.68,849.85,0.48,0.0
+COVID-19,2,average,cosine,15,0.53,1208.5,0.65,0.0
+COVID-19,2,average,mahalanobis,161,0.25,32763.04,0.14,0.03
+COVID-19,2,average,minkowski,4,0.68,888.07,0.47,0.08
+COVID-19,2,average,mahalanobis,161,0.25,32763.04,0.14,0.12
+COVID-19,2,complete,euclidean,6,0.62,1019.71,0.56,0.0
+COVID-19,2,complete,manhattan,7,0.63,1077.85,0.51,0.0
+COVID-19,2,complete,cosine,25,0.44,1127.02,0.89,0.01
+COVID-19,2,complete,mahalanobis,166,0.25,40930.43,0.15,0.03
+COVID-19,2,complete,minkowski,6,0.62,1019.71,0.56,0.09
+COVID-19,2,complete,mahalanobis,166,0.25,40930.43,0.15,0.13
+COVID-19,2,single,euclidean,1,,,,0.0
+COVID-19,2,single,manhattan,1,,,,0.0
+COVID-19,2,single,cosine,3,0.4,103.16,0.74,0.0
+COVID-19,2,single,mahalanobis,149,0.21,7354.78,0.15,0.02
+COVID-19,2,single,minkowski,1,,,,0.07
+COVID-19,2,single,mahalanobis,149,0.21,7354.78,0.15,0.1
+COVID-19,3,ward,euclidean,20,0.44,548.71,0.72,0.01
+COVID-19,3,average,euclidean,7,0.52,362.9,0.65,0.0
+COVID-19,3,average,manhattan,12,0.51,331.37,0.63,0.0
+COVID-19,3,average,cosine,46,0.42,287.82,0.5,0.01
+COVID-19,3,average,mahalanobis,210,0.09,37611.75,0.03,0.04
+COVID-19,3,average,minkowski,7,0.52,362.9,0.65,0.11
+COVID-19,3,average,mahalanobis,210,0.09,37611.75,0.03,0.16
+COVID-19,3,complete,euclidean,11,0.51,456.92,0.73,0.0
+COVID-19,3,complete,manhattan,21,0.43,490.66,0.74,0.01
+COVID-19,3,complete,cosine,57,0.44,554.01,0.56,0.01
+COVID-19,3,complete,mahalanobis,211,0.08,40963.19,0.04,0.03
+COVID-19,3,complete,minkowski,11,0.51,456.92,0.73,0.11
+COVID-19,3,complete,mahalanobis,211,0.08,40963.19,0.04,0.16
+COVID-19,3,single,euclidean,1,,,,0.0
+COVID-19,3,single,manhattan,1,,,,0.0
+COVID-19,3,single,cosine,16,-0.07,22.18,0.95,0.01
+COVID-19,3,single,mahalanobis,210,0.09,37611.75,0.03,0.03
+COVID-19,3,single,minkowski,1,,,,0.1
+COVID-19,3,single,mahalanobis,210,0.09,37611.75,0.03,0.14
+COVID-19,4,ward,euclidean,30,0.47,338.48,0.64,0.01
+COVID-19,4,average,euclidean,9,0.46,221.68,0.76,0.0
+COVID-19,4,average,manhattan,26,0.47,252.72,0.6,0.01
+COVID-19,4,average,cosine,64,0.42,231.05,0.45,0.01
+COVID-19,4,average,mahalanobis,217,0.05,55440.49,0.02,0.04
+COVID-19,4,average,minkowski,9,0.46,221.68,0.76,0.1
+COVID-19,4,average,mahalanobis,217,0.05,55440.49,0.02,0.15
+COVID-19,4,complete,euclidean,21,0.48,285.91,0.7,0.01
+COVID-19,4,complete,manhattan,34,0.45,297.77,0.7,0.01
+COVID-19,4,complete,cosine,74,0.38,318.43,0.5,0.01
+COVID-19,4,complete,mahalanobis,217,0.05,55440.49,0.02,0.04
+COVID-19,4,complete,minkowski,21,0.48,285.91,0.7,0.11
+COVID-19,4,complete,mahalanobis,217,0.05,55440.49,0.02,0.15
+COVID-19,4,single,euclidean,1,,,,0.0
+COVID-19,4,single,manhattan,1,,,,0.0
+COVID-19,4,single,cosine,36,0.15,45.24,0.54,0.01
+COVID-19,4,single,mahalanobis,217,0.05,55440.49,0.02,0.04
+COVID-19,4,single,minkowski,1,,,,0.11
+COVID-19,4,single,mahalanobis,217,0.05,55440.49,0.02,0.15
+Credit Card,2,ward,euclidean,7,0.77,9091.53,0.39,0.01
+Credit Card,2,average,euclidean,1,,,,0.01
+Credit Card,2,average,manhattan,1,,,,0.01
+Credit Card,2,average,cosine,13,0.63,3054.81,0.63,0.02
+Credit Card,2,average,mahalanobis,201,0.45,89226.12,0.3,0.04
+Credit Card,2,average,minkowski,1,,,,0.13
+Credit Card,2,average,mahalanobis,201,0.45,89226.12,0.3,0.18
+Credit Card,2,complete,euclidean,2,0.48,371.16,0.87,0.01
+Credit Card,2,complete,manhattan,2,0.6,383.87,0.37,0.01
+Credit Card,2,complete,cosine,18,0.6,3129.58,1.04,0.01
+Credit Card,2,complete,mahalanobis,227,0.41,129025.83,0.35,0.05
+Credit Card,2,complete,minkowski,2,0.48,371.16,0.87,0.15
+Credit Card,2,complete,mahalanobis,227,0.41,129025.83,0.35,0.22
+Credit Card,2,single,euclidean,1,,,,0.0
+Credit Card,2,single,manhattan,1,,,,0.0
+Credit Card,2,single,cosine,3,0.68,1019.88,0.56,0.01
+Credit Card,2,single,mahalanobis,142,0.41,6688.09,0.26,0.04
+Credit Card,2,single,minkowski,1,,,,0.11
+Credit Card,2,single,mahalanobis,142,0.41,6688.09,0.26,0.15
+Credit Card,3,ward,euclidean,8,0.7,6855.11,0.43,0.01
+Credit Card,3,average,euclidean,2,0.58,336.75,0.39,0.01
+Credit Card,3,average,manhattan,2,0.58,336.75,0.39,0.01
+Credit Card,3,average,cosine,25,0.59,5958.74,0.44,0.02
+Credit Card,3,average,mahalanobis,349,0.33,65802.84,0.22,0.07
+Credit Card,3,average,minkowski,2,0.58,336.75,0.39,0.21
+Credit Card,3,average,mahalanobis,349,0.33,65802.84,0.22,0.3
+Credit Card,3,complete,euclidean,2,0.58,336.75,0.39,0.02
+Credit Card,3,complete,manhattan,4,0.78,2902.51,0.33,0.01
+Credit Card,3,complete,cosine,38,0.53,7598.18,0.57,0.02
+Credit Card,3,complete,mahalanobis,379,0.33,100213.7,0.23,0.07
+Credit Card,3,complete,minkowski,2,0.58,336.75,0.39,0.22
+Credit Card,3,complete,mahalanobis,379,0.33,100213.7,0.23,0.31
+Credit Card,3,single,euclidean,1,,,,0.0
+Credit Card,3,single,manhattan,1,,,,0.0
+Credit Card,3,single,cosine,9,0.5,1483.64,0.46,0.01
+Credit Card,3,single,mahalanobis,299,0.28,6364.87,0.21,0.06
+Credit Card,3,single,minkowski,1,,,,0.18
+Credit Card,3,single,mahalanobis,299,0.28,6364.87,0.21,0.24
+Credit Card,4,ward,euclidean,11,0.68,3596.69,0.48,0.01
+Credit Card,4,average,euclidean,2,0.49,224.48,0.47,0.02
+Credit Card,4,average,manhattan,3,0.47,314.83,1.03,0.02
+Credit Card,4,average,cosine,33,0.51,2165.15,0.56,0.02
+Credit Card,4,average,mahalanobis,479,0.27,77264.78,0.13,0.1
+Credit Card,4,average,minkowski,2,0.49,224.48,0.47,0.27
+Credit Card,4,average,mahalanobis,479,0.27,77264.78,0.13,0.37
+Credit Card,4,complete,euclidean,3,0.44,272.18,0.62,0.01
+Credit Card,4,complete,manhattan,6,0.65,1246.46,0.56,0.01
+Credit Card,4,complete,cosine,54,0.49,3210.58,0.67,0.02
+Credit Card,4,complete,mahalanobis,486,0.27,90894.58,0.14,0.09
+Credit Card,4,complete,minkowski,3,0.44,272.18,0.62,0.28
+Credit Card,4,complete,mahalanobis,486,0.27,90894.58,0.14,0.39
+Credit Card,4,single,euclidean,1,,,,0.0
+Credit Card,4,single,manhattan,1,,,,0.0
+Credit Card,4,single,cosine,10,0.54,761.13,0.45,0.01
+Credit Card,4,single,mahalanobis,461,0.25,32010.04,0.13,0.09
+Credit Card,4,single,minkowski,1,,,,0.24
+Credit Card,4,single,mahalanobis,461,0.25,32010.04,0.13,0.33
+Mall Customer,2,ward,euclidean,6,0.8,7173.57,0.38,0.0
+Mall Customer,2,average,euclidean,3,0.84,1080.28,0.25,0.0
+Mall Customer,2,average,manhattan,3,0.84,1080.28,0.25,0.0
+Mall Customer,2,average,cosine,11,0.77,1683.56,0.34,0.0
+Mall Customer,2,average,mahalanobis,52,0.73,218852.46,0.22,0.01
+Mall Customer,2,average,minkowski,3,0.84,1080.28,0.25,0.03
+Mall Customer,2,average,mahalanobis,52,0.73,218852.46,0.22,0.05
+Mall Customer,2,complete,euclidean,4,0.86,3695.26,0.29,0.0
+Mall Customer,2,complete,manhattan,4,0.86,3695.26,0.29,0.0
+Mall Customer,2,complete,cosine,11,0.74,346.46,0.37,0.0
+Mall Customer,2,complete,mahalanobis,58,0.74,379654.15,0.22,0.01
+Mall Customer,2,complete,minkowski,4,0.86,3695.26,0.29,0.03
+Mall Customer,2,complete,mahalanobis,58,0.74,379654.15,0.22,0.05
+Mall Customer,2,single,euclidean,3,0.84,1080.28,0.25,0.0
+Mall Customer,2,single,manhattan,3,0.84,1080.28,0.25,0.0
+Mall Customer,2,single,cosine,5,0.57,253.49,0.6,0.0
+Mall Customer,2,single,mahalanobis,39,0.72,35433.91,0.2,0.01
+Mall Customer,2,single,minkowski,3,0.84,1080.28,0.25,0.03
+Mall Customer,2,single,mahalanobis,39,0.72,35433.91,0.2,0.04
+Mall Customer,3,ward,euclidean,10,0.63,2307.84,0.44,0.0
+Mall Customer,3,average,euclidean,5,0.68,601.08,0.41,0.0
+Mall Customer,3,average,manhattan,5,0.68,601.08,0.41,0.0
+Mall Customer,3,average,cosine,14,0.63,691.42,0.71,0.0
+Mall Customer,3,average,mahalanobis,101,0.5,69386.61,0.17,0.02
+Mall Customer,3,average,minkowski,5,0.68,601.08,0.41,0.05
+Mall Customer,3,average,mahalanobis,101,0.5,69386.61,0.17,0.08
+Mall Customer,3,complete,euclidean,7,0.7,1336.95,0.41,0.0
+Mall Customer,3,complete,manhattan,7,0.7,1336.95,0.41,0.0
+Mall Customer,3,complete,cosine,21,0.56,1170.88,0.56,0.01
+Mall Customer,3,complete,mahalanobis,111,0.5,118856.4,0.18,0.02
+Mall Customer,3,complete,minkowski,7,0.7,1336.95,0.41,0.05
+Mall Customer,3,complete,mahalanobis,111,0.5,118856.4,0.18,0.08
+Mall Customer,3,single,euclidean,2,0.55,109.26,0.44,0.0
+Mall Customer,3,single,manhattan,2,0.55,109.26,0.44,0.0
+Mall Customer,3,single,cosine,5,0.35,123.35,0.74,0.0
+Mall Customer,3,single,mahalanobis,84,0.51,14852.85,0.16,0.01
+Mall Customer,3,single,minkowski,2,0.55,109.26,0.44,0.05
+Mall Customer,3,single,mahalanobis,84,0.51,14852.85,0.16,0.07
+Mall Customer,4,ward,euclidean,15,0.62,1543.72,0.43,0.0
+Mall Customer,4,average,euclidean,8,0.66,475.76,0.35,0.0
+Mall Customer,4,average,manhattan,10,0.7,887.53,0.35,0.0
+Mall Customer,4,average,cosine,16,0.62,843.15,0.4,0.0
+Mall Customer,4,average,mahalanobis,140,0.34,77609.08,0.09,0.02
+Mall Customer,4,average,minkowski,8,0.66,475.76,0.35,0.08
+Mall Customer,4,average,mahalanobis,140,0.34,77609.08,0.09,0.11
+Mall Customer,4,complete,euclidean,11,0.65,916.0,0.4,0.0
+Mall Customer,4,complete,manhattan,13,0.64,1088.4,0.4,0.0
+Mall Customer,4,complete,cosine,24,0.54,1185.2,0.44,0.01
+Mall Customer,4,complete,mahalanobis,146,0.31,115785.43,0.1,0.02
+Mall Customer,4,complete,minkowski,11,0.65,916.0,0.4,0.07
+Mall Customer,4,complete,mahalanobis,146,0.31,115785.43,0.1,0.11
+Mall Customer,4,single,euclidean,3,0.39,65.74,1.52,0.0
+Mall Customer,4,single,manhattan,4,0.2,44.02,1.41,0.0
+Mall Customer,4,single,cosine,9,0.55,352.96,0.34,0.0
+Mall Customer,4,single,mahalanobis,135,0.36,57303.1,0.09,0.02
+Mall Customer,4,single,minkowski,3,0.39,65.74,1.52,0.07
+Mall Customer,4,single,mahalanobis,135,0.36,57303.1,0.09,0.1
+Sales Transactions,2,ward,euclidean,8,0.53,3242.12,0.54,0.02
+Sales Transactions,2,average,euclidean,1,,,,0.01
+Sales Transactions,2,average,manhattan,1,,,,0.01
+Sales Transactions,2,average,cosine,18,0.46,3347.04,0.67,0.02
+Sales Transactions,2,average,mahalanobis,457,0.33,42699.47,0.24,0.1
+Sales Transactions,2,average,minkowski,1,,,,0.29
+Sales Transactions,2,average,mahalanobis,457,0.33,42699.47,0.24,0.39
+Sales Transactions,2,complete,euclidean,1,,,,0.01
+Sales Transactions,2,complete,manhattan,2,0.44,520.8,0.77,0.02
+Sales Transactions,2,complete,cosine,31,0.36,2866.61,0.88,0.02
+Sales Transactions,2,complete,mahalanobis,484,0.31,52150.24,0.26,0.1
+Sales Transactions,2,complete,minkowski,1,,,,0.28
+Sales Transactions,2,complete,mahalanobis,484,0.31,52150.24,0.26,0.39
+Sales Transactions,2,single,euclidean,1,,,,0.0
+Sales Transactions,2,single,manhattan,1,,,,0.0
+Sales Transactions,2,single,cosine,1,,,,0.01
+Sales Transactions,2,single,mahalanobis,377,0.18,592.91,0.25,0.08
+Sales Transactions,2,single,minkowski,1,,,,0.23
+Sales Transactions,2,single,mahalanobis,377,0.18,592.91,0.25,0.31
+Sales Transactions,3,ward,euclidean,11,0.45,1394.4,0.72,0.02
+Sales Transactions,3,average,euclidean,1,,,,0.01
+Sales Transactions,3,average,manhattan,1,,,,0.01
+Sales Transactions,3,average,cosine,55,0.32,693.6,0.81,0.03
+Sales Transactions,3,average,mahalanobis,724,0.11,33387.19,0.08,0.14
+Sales Transactions,3,average,minkowski,1,,,,0.41
+Sales Transactions,3,average,mahalanobis,724,0.11,33387.19,0.08,0.56
+Sales Transactions,3,complete,euclidean,1,,,,0.01
+Sales Transactions,3,complete,manhattan,4,0.52,923.03,0.65,0.02
+Sales Transactions,3,complete,cosine,94,0.32,856.09,0.85,0.03
+Sales Transactions,3,complete,mahalanobis,728,0.11,36521.85,0.08,0.14
+Sales Transactions,3,complete,minkowski,1,,,,0.42
+Sales Transactions,3,complete,mahalanobis,728,0.11,36521.85,0.08,0.57
+Sales Transactions,3,single,euclidean,1,,,,0.0
+Sales Transactions,3,single,manhattan,1,,,,0.0
+Sales Transactions,3,single,cosine,4,-0.42,0.26,2.07,0.01
+Sales Transactions,3,single,mahalanobis,711,0.11,17764.48,0.08,0.13
+Sales Transactions,3,single,minkowski,1,,,,0.38
+Sales Transactions,3,single,mahalanobis,711,0.11,17764.48,0.08,0.51
+Sales Transactions,4,ward,euclidean,19,0.38,562.13,0.86,0.02
+Sales Transactions,4,average,euclidean,1,,,,0.01
+Sales Transactions,4,average,manhattan,3,0.35,288.37,1.25,0.01
+Sales Transactions,4,average,cosine,127,0.28,331.85,0.8,0.04
+Sales Transactions,4,average,mahalanobis,793,0.02,34802.48,0.03,0.17
+Sales Transactions,4,average,minkowski,1,,,,0.48
+Sales Transactions,4,average,mahalanobis,793,0.02,34802.48,0.03,0.64
+Sales Transactions,4,complete,euclidean,3,0.25,209.96,1.6,0.02
+Sales Transactions,4,complete,manhattan,12,0.36,511.72,0.91,0.02
+Sales Transactions,4,complete,cosine,191,0.27,372.9,0.84,0.05
+Sales Transactions,4,complete,mahalanobis,793,0.02,34958.67,0.03,0.15
+Sales Transactions,4,complete,minkowski,3,0.25,209.96,1.6,0.45
+Sales Transactions,4,complete,mahalanobis,793,0.02,34958.67,0.03,0.63
+Sales Transactions,4,single,euclidean,1,,,,0.0
+Sales Transactions,4,single,manhattan,1,,,,0.0
+Sales Transactions,4,single,cosine,13,-0.5,2.25,1.41,0.02
+Sales Transactions,4,single,mahalanobis,788,0.02,20672.87,0.03,0.14
+Sales Transactions,4,single,minkowski,1,,,,0.4
+Sales Transactions,4,single,mahalanobis,788,0.02,20672.87,0.03,0.55
+Wholesale,2,ward,euclidean,10,0.47,1382.88,0.64,0.01
+Wholesale,2,average,euclidean,1,,,,0.0
+Wholesale,2,average,manhattan,2,0.46,325.96,0.83,0.01
+Wholesale,2,average,cosine,22,0.31,451.19,1.15,0.01
+Wholesale,2,average,mahalanobis,347,0.19,25891.73,0.13,0.06
+Wholesale,2,average,minkowski,1,,,,0.16
+Wholesale,2,average,mahalanobis,347,0.19,25891.73,0.13,0.23
+Wholesale,2,complete,euclidean,4,0.53,912.42,0.74,0.01
+Wholesale,2,complete,manhattan,4,0.52,898.53,0.75,0.01
+Wholesale,2,complete,cosine,33,0.26,445.03,1.39,0.01
+Wholesale,2,complete,mahalanobis,357,0.18,31570.1,0.13,0.06
+Wholesale,2,complete,minkowski,4,0.53,912.42,0.74,0.19
+Wholesale,2,complete,mahalanobis,357,0.18,31570.1,0.13,0.26
+Wholesale,2,single,euclidean,1,,,,0.0
+Wholesale,2,single,manhattan,1,,,,0.0
+Wholesale,2,single,cosine,2,0.46,325.95,0.84,0.01
+Wholesale,2,single,mahalanobis,333,0.18,5964.5,0.12,0.06
+Wholesale,2,single,minkowski,1,,,,0.17
+Wholesale,2,single,mahalanobis,333,0.18,5964.5,0.12,0.22
+Wholesale,3,ward,euclidean,19,0.43,684.96,0.77,0.01
+Wholesale,3,average,euclidean,2,0.38,154.91,0.72,0.01
+Wholesale,3,average,manhattan,5,0.46,395.78,0.63,0.01
+Wholesale,3,average,cosine,64,0.37,460.74,0.64,0.01
+Wholesale,3,average,mahalanobis,416,0.07,36389.52,0.04,0.07
+Wholesale,3,average,minkowski,2,0.38,154.91,0.72,0.21
+Wholesale,3,average,mahalanobis,416,0.07,36389.52,0.04,0.29
+Wholesale,3,complete,euclidean,5,0.48,499.54,0.68,0.01
+Wholesale,3,complete,manhattan,10,0.45,584.85,0.71,0.01
+Wholesale,3,complete,cosine,83,0.34,502.51,0.79,0.02
+Wholesale,3,complete,mahalanobis,416,0.07,36389.52,0.04,0.07
+Wholesale,3,complete,minkowski,5,0.48,499.54,0.68,0.22
+Wholesale,3,complete,mahalanobis,416,0.07,36389.52,0.04,0.3
+Wholesale,3,single,euclidean,1,,,,0.0
+Wholesale,3,single,manhattan,1,,,,0.0
+Wholesale,3,single,cosine,13,-0.49,0.5,1.85,0.01
+Wholesale,3,single,mahalanobis,414,0.07,29933.74,0.04,0.08
+Wholesale,3,single,minkowski,1,,,,0.23
+Wholesale,3,single,mahalanobis,414,0.07,29933.74,0.04,0.31
+Wholesale,4,ward,euclidean,21,0.44,552.23,0.73,0.01
+Wholesale,4,average,euclidean,4,0.36,189.23,0.81,0.01
+Wholesale,4,average,manhattan,9,0.43,397.79,0.76,0.01
+Wholesale,4,average,cosine,91,0.39,334.83,0.57,0.02
+Wholesale,4,average,mahalanobis,423,0.05,43547.4,0.02,0.06
+Wholesale,4,average,minkowski,4,0.36,189.23,0.81,0.21
+Wholesale,4,average,mahalanobis,423,0.05,43547.4,0.02,0.29
+Wholesale,4,complete,euclidean,7,0.46,390.08,0.66,0.01
+Wholesale,4,complete,manhattan,18,0.44,506.79,0.76,0.01
+Wholesale,4,complete,cosine,109,0.35,423.39,0.61,0.02
+Wholesale,4,complete,mahalanobis,423,0.05,43547.4,0.02,0.08
+Wholesale,4,complete,minkowski,7,0.46,390.08,0.66,0.23
+Wholesale,4,complete,mahalanobis,423,0.05,43547.4,0.02,0.31
+Wholesale,4,single,euclidean,1,,,,0.0
+Wholesale,4,single,manhattan,1,,,,0.0
+Wholesale,4,single,cosine,34,-0.21,20.12,1.31,0.01
+Wholesale,4,single,mahalanobis,423,0.05,43547.4,0.02,0.07
+Wholesale,4,single,minkowski,1,,,,0.2
+Wholesale,4,single,mahalanobis,423,0.05,43547.4,0.02,0.28
