@@ -172,7 +172,7 @@ def show_result(df, name, results, i):
                           (dim, linkage, dis_matrix, runtime))
                     if (max(clustering.labels_) + 1) == 1:
                         results.loc[idx] = [name, dim, linkage, dis_matrix, (max(clustering.labels_) + 1),
-                                            'inf', 'inf', 'inf', round(runtime, 2)]
+                                            float('nan'), float('nan'), float('nan'), round(runtime, 2)]
                     else:
                         results.loc[idx] = [name, dim, linkage, dis_matrix, (max(clustering.labels_) + 1),
                                             round(silhouette_score(embedded_df, clustering.labels_), 2),
@@ -213,7 +213,7 @@ def show_result(df, name, results, i):
                               (dim, linkage, dis_name, runtime))
                         if (max(clustering.labels_) + 1) == 1:
                             results.loc[idx] = [name, dim, linkage, dis_name, (max(clustering.labels_) + 1),
-                                                'inf', 'inf', 'inf', round(runtime, 2)]
+                                                float('nan'), float('nan'), float('nan'), round(runtime, 2)]
                         else:
                             results.loc[idx] = [name, dim, linkage, dis_name, (max(clustering.labels_) + 1),
                                                 round(silhouette_score(embedded_df, clustering.labels_), 2),
