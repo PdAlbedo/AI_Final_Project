@@ -7,8 +7,6 @@
     <list default="true" id="2e3eca6c-907e-472d-a4f7-2c46e6b507f3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/agglomerativeClustering.py" beforeDir="false" afterPath="$PROJECT_DIR$/agglomerativeClustering.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datasetProcessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/datasetProcessing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +94,8 @@
       <workItem from="1651347674552" duration="338000" />
       <workItem from="1651462777717" duration="3353000" />
       <workItem from="1651512014155" duration="772000" />
-      <workItem from="1651515375041" duration="2723000" />
+      <workItem from="1651515375041" duration="2744000" />
+      <workItem from="1651522471292" duration="334000" />
     </task>
     <task id="LOCAL-00001" summary="Results computed">
       <created>1651346499726</created>
@@ -140,7 +139,21 @@
       <option name="project" value="LOCAL" />
       <updated>1651512595303</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Final ver">
+      <created>1651518103431</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1651518103431</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Final ver">
+      <created>1651518111090</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1651518111090</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +179,6 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/FinalProject$agglomerativeClustering.coverage" NAME="agglomerativeClustering Coverage Results" MODIFIED="1651517584032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FinalProject$agglomerativeClustering.coverage" NAME="agglomerativeClustering Coverage Results" MODIFIED="1651522521435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

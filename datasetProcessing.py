@@ -196,7 +196,7 @@ def show_result(df, name, results, i, loc_df, loc_i):
                         if i == 0:
                             dist = DistanceMetric.get_metric('chebyshev')
                             dis_name = 'chebyshev'
-                        if i == 1:
+                        elif i == 1:
                             dist = DistanceMetric.get_metric('minkowski')
                             dis_name = 'minkowski'
                         else:
