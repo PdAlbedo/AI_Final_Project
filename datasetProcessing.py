@@ -135,10 +135,11 @@ def extract_wcd():
     return wcd_idx, df_wcd_norm
 
 
-def show_result(df, name, results, i):
+def show_result(df, name, results, i, loc_df, loc_i):
     is_passed = False
     case = 0
     idx = i
+    loc_idx = loc_i
     for dim in range(2, 5):
         embedded_df = manifold.SpectralEmbedding(n_components = dim).fit_transform(df)
         for linkage in ("ward", "average", "complete", "single"):
@@ -173,13 +174,21 @@ def show_result(df, name, results, i):
                     if (max(clustering.labels_) + 1) == 1:
                         results.loc[idx] = [name, dim, linkage, dis_matrix, (max(clustering.labels_) + 1),
                                             float('nan'), float('nan'), float('nan'), round(runtime, 2)]
+                        loc_df.loc[loc_idx] = [name, dim, linkage, dis_matrix, (max(clustering.labels_) + 1),
+                                               float('nan'), float('nan'), float('nan'), round(runtime, 2)]
                     else:
                         results.loc[idx] = [name, dim, linkage, dis_matrix, (max(clustering.labels_) + 1),
                                             round(silhouette_score(embedded_df, clustering.labels_), 2),
                                             round(calinski_harabasz_score(embedded_df, clustering.labels_), 2),
                                             round(davies_bouldin_score(embedded_df, clustering.labels_), 2),
                                             round(runtime, 2)]
+                        loc_df.loc[loc_idx] = [name, dim, linkage, dis_matrix, (max(clustering.labels_) + 1),
+                                               round(silhouette_score(embedded_df, clustering.labels_), 2),
+                                               round(calinski_harabasz_score(embedded_df, clustering.labels_), 2),
+                                               round(davies_bouldin_score(embedded_df, clustering.labels_), 2),
+                                               round(runtime, 2)]
                     idx += 1
+                    loc_idx += 1
                     case += 1
                     print('###########################################################\n')
                 else:
@@ -214,13 +223,21 @@ def show_result(df, name, results, i):
                         if (max(clustering.labels_) + 1) == 1:
                             results.loc[idx] = [name, dim, linkage, dis_name, (max(clustering.labels_) + 1),
                                                 float('nan'), float('nan'), float('nan'), round(runtime, 2)]
+                            loc_df.loc[loc_idx] = [name, dim, linkage, dis_name, (max(clustering.labels_) + 1),
+                                                   float('nan'), float('nan'), float('nan'), round(runtime, 2)]
                         else:
                             results.loc[idx] = [name, dim, linkage, dis_name, (max(clustering.labels_) + 1),
                                                 round(silhouette_score(embedded_df, clustering.labels_), 2),
                                                 round(calinski_harabasz_score(embedded_df, clustering.labels_), 2),
                                                 round(davies_bouldin_score(embedded_df, clustering.labels_), 2),
                                                 round(runtime, 2)]
+                            loc_df.loc[loc_idx] = [name, dim, linkage, dis_name, (max(clustering.labels_) + 1),
+                                                   round(silhouette_score(embedded_df, clustering.labels_), 2),
+                                                   round(calinski_harabasz_score(embedded_df, clustering.labels_), 2),
+                                                   round(davies_bouldin_score(embedded_df, clustering.labels_), 2),
+                                                   round(runtime, 2)]
                         idx += 1
+                        loc_idx += 1
                         case += 1
                         print('###########################################################\n')
-    return results, idx
+    return results, idx, loc_df
