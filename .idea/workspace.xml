@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e3eca6c-907e-472d-a4f7-2c46e6b507f3" name="Changes" comment="" />
+    <list default="true" id="2e3eca6c-907e-472d-a4f7-2c46e6b507f3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/FinalProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FinalProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agglomerativeClustering.py" beforeDir="false" afterPath="$PROJECT_DIR$/agglomerativeClustering.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasetProcessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/datasetProcessing.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +46,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "D:/NEU/CS5100/Projects/FinalProject",
     "node.js.detected.package.eslint": "true",
@@ -86,7 +96,8 @@
       <workItem from="1651340534389" duration="4864000" />
       <workItem from="1651346885998" duration="741000" />
       <workItem from="1651347644496" duration="19000" />
-      <workItem from="1651347674552" duration="179000" />
+      <workItem from="1651347674552" duration="338000" />
+      <workItem from="1651462777717" duration="3277000" />
     </task>
     <task id="LOCAL-00001" summary="Results computed">
       <created>1651346499726</created>
@@ -109,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651347255108</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Final ver">
+      <created>1651347929466</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1651347929466</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,7 +138,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Results computed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Results computed" />
+    <MESSAGE value="Final ver" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final ver" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -134,6 +153,6 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/FinalProject$agglomerativeClustering.coverage" NAME="agglomerativeClustering Coverage Results" MODIFIED="1651345916814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FinalProject$agglomerativeClustering.coverage" NAME="agglomerativeClustering Coverage Results" MODIFIED="1651465551561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

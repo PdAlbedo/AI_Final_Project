@@ -4,6 +4,7 @@ distance measure for agglomerative hierarchical clustering
 """
 __author__ = "Xichen Liu, Jeff Turgeon"
 
+import pandas as pd
 import datasetProcessing
 
 
@@ -17,17 +18,24 @@ def main():
     stc_idx, stc_data = datasetProcessing.extract_stc()
     wcd_idx, wcd_data = datasetProcessing.extract_wcd()
 
-    datasetProcessing.show_result(cc_data, 'CC General')
+    result_df = pd.DataFrame(columns = ['Name', 'Num of Dimensions', 'Linkage', 'Distance', 'Num of clusters',
+                                        'Silhouette Score', 'Calinski Harabasz Score', 'Davies-Bouldin Index',
+                                        'Runtime'])
+
+    i = 0
+    result_df, i = datasetProcessing.show_result(cc_data, 'CC General', result_df, i)
     print('\n')
-    datasetProcessing.show_result(covid_data, 'COVID-19')
+    result_df, i = datasetProcessing.show_result(covid_data, 'COVID-19', result_df, i)
     print('\n')
-    datasetProcessing.show_result(cccd_data, 'Credit Card')
+    result_df, i = datasetProcessing.show_result(cccd_data, 'Credit Card', result_df, i)
     print('\n')
-    datasetProcessing.show_result(mall_data, 'Mall Customer')
+    result_df, i = datasetProcessing.show_result(mall_data, 'Mall Customer', result_df, i)
     print('\n')
-    datasetProcessing.show_result(stc_data, 'Sales Transactions')
+    result_df, i = datasetProcessing.show_result(stc_data, 'Sales Transactions', result_df, i)
     print('\n')
-    datasetProcessing.show_result(wcd_data, 'Wholesale')
+    result_df, i = datasetProcessing.show_result(wcd_data, 'Wholesale', result_df, i)
+
+    result_df.to_csv('Results.csv', index = False)
 
 
 if __name__ == '__main__':

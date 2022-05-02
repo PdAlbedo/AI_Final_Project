@@ -135,9 +135,10 @@ def extract_wcd():
     return wcd_idx, df_wcd_norm
 
 
-def show_result(df, name):
+def show_result(df, name, results, i):
     is_passed = False
     case = 0
+    idx = i
     for dim in range(2, 5):
         embedded_df = manifold.SpectralEmbedding(n_components = dim).fit_transform(df)
         for linkage in ("ward", "average", "complete", "single"):
@@ -166,8 +167,19 @@ def show_result(df, name):
                         print('Davies-Bouldin Index: %.2f' % davies_bouldin_score(embedded_df,
                                                                                   clustering.labels_))
                     print(clustering.labels_)
+                    runtime = time() - t0
                     print("Dimension after embedding: %d\tLinkage: %s\tDistance: %s\tRuntime: %.2fs" %
-                          (dim, linkage, dis_matrix, time() - t0))
+                          (dim, linkage, dis_matrix, runtime))
+                    if (max(clustering.labels_) + 1) == 1:
+                        results.loc[idx] = [name, dim, linkage, dis_matrix, (max(clustering.labels_) + 1),
+                                            'inf', 'inf', 'inf', round(runtime, 2)]
+                    else:
+                        results.loc[idx] = [name, dim, linkage, dis_matrix, (max(clustering.labels_) + 1),
+                                            round(silhouette_score(embedded_df, clustering.labels_), 2),
+                                            round(calinski_harabasz_score(embedded_df, clustering.labels_), 2),
+                                            round(davies_bouldin_score(embedded_df, clustering.labels_), 2),
+                                            round(runtime, 2)]
+                    idx += 1
                     case += 1
                     print('###########################################################\n')
                 else:
@@ -196,7 +208,19 @@ def show_result(df, name):
                                                                                             clustering.labels_))
                             print('Davies-Bouldin Index: %.2f' % davies_bouldin_score(embedded_df, clustering.labels_))
                         print(clustering.labels_)
+                        runtime = time() - t0
                         print("Dimension after embedding: %d\tLinkage: %s\tDistance: %s\tRuntime: %.2fs" %
-                              (dim, linkage, dis_name, time() - t0))
+                              (dim, linkage, dis_name, runtime))
+                        if (max(clustering.labels_) + 1) == 1:
+                            results.loc[idx] = [name, dim, linkage, dis_name, (max(clustering.labels_) + 1),
+                                                'inf', 'inf', 'inf', round(runtime, 2)]
+                        else:
+                            results.loc[idx] = [name, dim, linkage, dis_name, (max(clustering.labels_) + 1),
+                                                round(silhouette_score(embedded_df, clustering.labels_), 2),
+                                                round(calinski_harabasz_score(embedded_df, clustering.labels_), 2),
+                                                round(davies_bouldin_score(embedded_df, clustering.labels_), 2),
+                                                round(runtime, 2)]
+                        idx += 1
                         case += 1
                         print('###########################################################\n')
+    return results, idx
