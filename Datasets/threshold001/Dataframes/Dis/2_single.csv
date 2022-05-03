@@ -1,0 +1,37 @@
+Name,Num of Dimensions,Linkage,Distance,Num of clusters,Silhouette Score,Calinski Harabasz Score,Davies-Bouldin Index,Runtime
+CC General,2,single,euclidean,1,,,,0.32
+CC General,2,single,manhattan,1,,,,0.28
+CC General,2,single,cosine,1,,,,0.77
+CC General,2,single,chebyshev,1,,,,1.47
+CC General,2,single,minkowski,1,,,,2.89
+CC General,2,single,mahalanobis,2958,-0.02,552.99,0.3,5.94
+COVID-19,2,single,euclidean,1,,,,0.0
+COVID-19,2,single,manhattan,1,,,,0.0
+COVID-19,2,single,cosine,5,0.56,377.7,0.47,0.0
+COVID-19,2,single,chebyshev,1,,,,0.0
+COVID-19,2,single,minkowski,1,,,,0.01
+COVID-19,2,single,mahalanobis,184,0.14,27330.67,0.09,0.04
+Credit Card,2,single,euclidean,1,,,,0.0
+Credit Card,2,single,manhattan,1,,,,0.0
+Credit Card,2,single,cosine,5,0.56,515.11,0.69,0.01
+Credit Card,2,single,chebyshev,1,,,,0.01
+Credit Card,2,single,minkowski,1,,,,0.03
+Credit Card,2,single,mahalanobis,244,0.27,9615.87,0.19,0.09
+Mall Customer,2,single,euclidean,3,0.86,1235.88,0.23,0.0
+Mall Customer,2,single,manhattan,3,0.86,1235.88,0.23,0.0
+Mall Customer,2,single,cosine,3,0.86,1235.88,0.23,0.0
+Mall Customer,2,single,chebyshev,3,0.86,1235.88,0.23,0.0
+Mall Customer,2,single,minkowski,3,0.86,1235.88,0.23,0.02
+Mall Customer,2,single,mahalanobis,62,0.7,321810.64,0.15,0.03
+Sales Transactions,2,single,euclidean,1,,,,0.0
+Sales Transactions,2,single,manhattan,1,,,,0.0
+Sales Transactions,2,single,cosine,1,,,,0.0
+Sales Transactions,2,single,chebyshev,1,,,,0.01
+Sales Transactions,2,single,minkowski,1,,,,0.03
+Sales Transactions,2,single,mahalanobis,576,0.2,18629.99,0.12,0.14
+Wholesale,2,single,euclidean,1,,,,0.0
+Wholesale,2,single,manhattan,1,,,,0.0
+Wholesale,2,single,cosine,6,-0.13,67.74,1.23,0.01
+Wholesale,2,single,chebyshev,1,,,,0.0
+Wholesale,2,single,minkowski,1,,,,0.01
+Wholesale,2,single,mahalanobis,402,0.09,53058.88,0.05,0.08

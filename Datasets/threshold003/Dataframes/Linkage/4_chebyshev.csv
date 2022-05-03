@@ -1,0 +1,19 @@
+Name,Num of Dimensions,Distance,Linkage,Num of clusters,Silhouette Score,Calinski Harabasz Score,Davies-Bouldin Index,Runtime
+CC General,4,chebyshev,average,1,,,,2.53
+CC General,4,chebyshev,complete,1,,,,2.56
+CC General,4,chebyshev,single,1,,,,1.69
+COVID-19,4,chebyshev,average,4,0.4,104.18,1.02,0.0
+COVID-19,4,chebyshev,complete,10,0.47,251.26,0.77,0.01
+COVID-19,4,chebyshev,single,1,,,,0.0
+Credit Card,4,chebyshev,average,1,,,,0.01
+Credit Card,4,chebyshev,complete,1,,,,0.01
+Credit Card,4,chebyshev,single,1,,,,0.01
+Mall Customer,4,chebyshev,average,5,0.78,689.31,0.32,0.0
+Mall Customer,4,chebyshev,complete,6,0.75,851.59,0.34,0.0
+Mall Customer,4,chebyshev,single,2,0.34,58.93,1.69,0.0
+Sales Transactions,4,chebyshev,average,1,,,,0.02
+Sales Transactions,4,chebyshev,complete,1,,,,0.02
+Sales Transactions,4,chebyshev,single,1,,,,0.02
+Wholesale,4,chebyshev,average,1,,,,0.01
+Wholesale,4,chebyshev,complete,1,,,,0.0
+Wholesale,4,chebyshev,single,1,,,,0.0

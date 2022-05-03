@@ -1,0 +1,37 @@
+Name,Num of Dimensions,Linkage,Distance,Num of clusters,Silhouette Score,Calinski Harabasz Score,Davies-Bouldin Index,Runtime
+CC General,3,complete,euclidean,1,,,,1.62
+CC General,3,complete,manhattan,1,,,,1.51
+CC General,3,complete,cosine,406,0.2,2065.15,1.97,2.46
+CC General,3,complete,chebyshev,1,,,,2.46
+CC General,3,complete,minkowski,1,,,,4.84
+CC General,3,complete,mahalanobis,5773,0.29,371791.82,0.15,9.82
+COVID-19,3,complete,euclidean,28,0.45,540.12,0.61,0.01
+COVID-19,3,complete,manhattan,43,0.39,601.36,0.7,0.01
+COVID-19,3,complete,cosine,72,0.42,532.23,0.5,0.02
+COVID-19,3,complete,chebyshev,25,0.43,523.73,0.67,0.01
+COVID-19,3,complete,minkowski,28,0.45,540.12,0.61,0.03
+COVID-19,3,complete,mahalanobis,221,0.03,247881.84,0.01,0.08
+Credit Card,3,complete,euclidean,5,0.75,2800.96,0.43,0.02
+Credit Card,3,complete,manhattan,7,0.67,2107.96,0.52,0.01
+Credit Card,3,complete,cosine,53,0.46,9595.98,0.64,0.02
+Credit Card,3,complete,chebyshev,4,0.78,2902.51,0.33,0.02
+Credit Card,3,complete,minkowski,5,0.75,2800.96,0.43,0.05
+Credit Card,3,complete,mahalanobis,480,0.26,309455.12,0.14,0.17
+Mall Customer,3,complete,euclidean,10,0.67,2479.37,0.38,0.0
+Mall Customer,3,complete,manhattan,10,0.67,2479.37,0.38,0.0
+Mall Customer,3,complete,cosine,26,0.59,1988.17,0.34,0.01
+Mall Customer,3,complete,chebyshev,10,0.67,2479.37,0.38,0.0
+Mall Customer,3,complete,minkowski,10,0.67,2479.37,0.38,0.02
+Mall Customer,3,complete,mahalanobis,132,0.41,317392.11,0.13,0.05
+Sales Transactions,3,complete,euclidean,7,0.47,1126.58,0.69,0.03
+Sales Transactions,3,complete,manhattan,12,0.42,1343.03,0.73,0.02
+Sales Transactions,3,complete,cosine,134,0.31,898.88,0.83,0.05
+Sales Transactions,3,complete,chebyshev,5,0.29,324.01,1.37,0.03
+Sales Transactions,3,complete,minkowski,7,0.47,1126.58,0.69,0.09
+Sales Transactions,3,complete,mahalanobis,782,0.04,94241.76,0.03,0.28
+Wholesale,3,complete,euclidean,16,0.41,570.84,0.79,0.01
+Wholesale,3,complete,manhattan,32,0.42,643.33,0.73,0.01
+Wholesale,3,complete,cosine,115,0.3,479.28,0.77,0.03
+Wholesale,3,complete,chebyshev,14,0.4,549.13,0.8,0.01
+Wholesale,3,complete,minkowski,16,0.41,570.84,0.79,0.03
+Wholesale,3,complete,mahalanobis,431,0.03,114953.32,0.01,0.13

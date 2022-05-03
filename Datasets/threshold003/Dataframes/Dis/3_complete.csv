@@ -1,0 +1,37 @@
+Name,Num of Dimensions,Linkage,Distance,Num of clusters,Silhouette Score,Calinski Harabasz Score,Davies-Bouldin Index,Runtime
+CC General,3,complete,euclidean,1,,,,1.57
+CC General,3,complete,manhattan,1,,,,1.45
+CC General,3,complete,cosine,197,0.27,3139.35,1.67,2.4
+CC General,3,complete,chebyshev,1,,,,2.45
+CC General,3,complete,minkowski,1,,,,4.71
+CC General,3,complete,mahalanobis,3897,0.38,68193.37,0.27,8.99
+COVID-19,3,complete,euclidean,7,0.53,388.05,0.72,0.0
+COVID-19,3,complete,manhattan,11,0.44,374.48,0.85,0.0
+COVID-19,3,complete,cosine,53,0.43,400.06,0.59,0.01
+COVID-19,3,complete,chebyshev,7,0.54,424.12,0.67,0.0
+COVID-19,3,complete,minkowski,7,0.53,388.05,0.72,0.02
+COVID-19,3,complete,mahalanobis,203,0.12,20843.94,0.06,0.06
+Credit Card,3,complete,euclidean,1,,,,0.01
+Credit Card,3,complete,manhattan,2,0.58,336.75,0.39,0.01
+Credit Card,3,complete,cosine,28,0.55,6750.1,0.62,0.02
+Credit Card,3,complete,chebyshev,1,,,,0.01
+Credit Card,3,complete,minkowski,1,,,,0.03
+Credit Card,3,complete,mahalanobis,306,0.37,56811.36,0.31,0.09
+Mall Customer,3,complete,euclidean,5,0.74,1265.19,0.38,0.0
+Mall Customer,3,complete,manhattan,5,0.71,899.35,0.37,0.0
+Mall Customer,3,complete,cosine,14,0.64,1279.0,0.35,0.01
+Mall Customer,3,complete,chebyshev,5,0.74,1319.82,0.38,0.0
+Mall Customer,3,complete,minkowski,5,0.74,1265.19,0.38,0.01
+Mall Customer,3,complete,mahalanobis,83,0.57,45265.22,0.24,0.04
+Sales Transactions,3,complete,euclidean,1,,,,0.01
+Sales Transactions,3,complete,manhattan,2,0.26,235.58,1.82,0.02
+Sales Transactions,3,complete,cosine,71,0.33,961.25,0.88,0.03
+Sales Transactions,3,complete,chebyshev,1,,,,0.02
+Sales Transactions,3,complete,minkowski,1,,,,0.04
+Sales Transactions,3,complete,mahalanobis,678,0.15,20245.66,0.13,0.17
+Wholesale,3,complete,euclidean,2,0.25,129.8,1.75,0.01
+Wholesale,3,complete,manhattan,6,0.46,460.19,0.7,0.01
+Wholesale,3,complete,cosine,75,0.33,484.43,0.81,0.03
+Wholesale,3,complete,chebyshev,1,,,,0.01
+Wholesale,3,complete,minkowski,2,0.25,129.8,1.75,0.02
+Wholesale,3,complete,mahalanobis,402,0.1,17842.41,0.07,0.11

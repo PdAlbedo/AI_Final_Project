@@ -1,0 +1,37 @@
+Name,Num of Dimensions,Linkage,Distance,Num of clusters,Silhouette Score,Calinski Harabasz Score,Davies-Bouldin Index,Runtime
+CC General,2,complete,euclidean,1,,,,1.51
+CC General,2,complete,manhattan,1,,,,1.38
+CC General,2,complete,cosine,33,0.21,4351.21,3.26,2.17
+CC General,2,complete,chebyshev,1,,,,2.24
+CC General,2,complete,minkowski,1,,,,4.53
+CC General,2,complete,mahalanobis,1980,0.44,107676.76,0.47,8.12
+COVID-19,2,complete,euclidean,4,0.67,805.9,0.46,0.0
+COVID-19,2,complete,manhattan,6,0.63,1021.96,0.46,0.0
+COVID-19,2,complete,cosine,17,0.49,1248.91,0.71,0.01
+COVID-19,2,complete,chebyshev,4,0.68,877.19,0.47,0.01
+COVID-19,2,complete,minkowski,4,0.67,805.9,0.46,0.02
+COVID-19,2,complete,mahalanobis,142,0.32,22576.45,0.2,0.06
+Credit Card,2,complete,euclidean,1,,,,0.01
+Credit Card,2,complete,manhattan,1,,,,0.01
+Credit Card,2,complete,cosine,15,0.61,2714.12,0.72,0.02
+Credit Card,2,complete,chebyshev,1,,,,0.01
+Credit Card,2,complete,minkowski,1,,,,0.03
+Credit Card,2,complete,mahalanobis,177,0.44,86397.29,0.4,0.08
+Mall Customer,2,complete,euclidean,3,0.62,344.32,0.45,0.0
+Mall Customer,2,complete,manhattan,4,0.86,3691.75,0.29,0.0
+Mall Customer,2,complete,cosine,11,0.74,346.12,0.37,0.0
+Mall Customer,2,complete,chebyshev,3,0.62,344.32,0.45,0.0
+Mall Customer,2,complete,minkowski,3,0.62,344.32,0.45,0.01
+Mall Customer,2,complete,mahalanobis,43,0.76,153219.92,0.29,0.03
+Sales Transactions,2,complete,euclidean,1,,,,0.01
+Sales Transactions,2,complete,manhattan,1,,,,0.01
+Sales Transactions,2,complete,cosine,25,0.39,3464.94,0.82,0.02
+Sales Transactions,2,complete,chebyshev,1,,,,0.02
+Sales Transactions,2,complete,minkowski,1,,,,0.04
+Sales Transactions,2,complete,mahalanobis,398,0.36,33746.39,0.33,0.14
+Wholesale,2,complete,euclidean,1,,,,0.01
+Wholesale,2,complete,manhattan,2,0.26,121.98,1.78,0.01
+Wholesale,2,complete,cosine,29,0.27,470.08,1.32,0.01
+Wholesale,2,complete,chebyshev,1,,,,0.01
+Wholesale,2,complete,minkowski,1,,,,0.02
+Wholesale,2,complete,mahalanobis,321,0.24,17804.45,0.18,0.08

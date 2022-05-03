@@ -1,0 +1,19 @@
+Name,Num of Dimensions,Linkage,Distance,Num of clusters,Silhouette Score,Calinski Harabasz Score,Davies-Bouldin Index,Runtime
+CC General,2,complete,mahalanobis,2692,0.43,167604.93,0.39,8.31
+CC General,3,complete,mahalanobis,4668,0.35,129023.41,0.21,9.3
+CC General,4,complete,mahalanobis,5437,0.3,143945.66,0.16,9.94
+COVID-19,2,complete,mahalanobis,166,0.25,40930.43,0.15,0.06
+COVID-19,3,complete,mahalanobis,211,0.08,40963.19,0.04,0.06
+COVID-19,4,complete,mahalanobis,217,0.05,55440.49,0.02,0.07
+Credit Card,2,complete,mahalanobis,227,0.41,129025.83,0.35,0.13
+Credit Card,3,complete,mahalanobis,379,0.33,100213.7,0.23,0.15
+Credit Card,4,complete,mahalanobis,486,0.27,90894.58,0.14,0.17
+Mall Customer,2,complete,mahalanobis,58,0.74,306644.29,0.22,0.03
+Mall Customer,3,complete,mahalanobis,111,0.5,134279.14,0.18,0.04
+Mall Customer,4,complete,mahalanobis,146,0.31,135603.59,0.1,0.05
+Sales Transactions,2,complete,mahalanobis,484,0.31,52150.24,0.26,0.13
+Sales Transactions,3,complete,mahalanobis,728,0.11,36521.85,0.08,0.18
+Sales Transactions,4,complete,mahalanobis,793,0.02,34958.67,0.03,0.27
+Wholesale,2,complete,mahalanobis,357,0.18,31570.1,0.13,0.11
+Wholesale,3,complete,mahalanobis,416,0.07,36389.52,0.04,0.13
+Wholesale,4,complete,mahalanobis,423,0.05,43547.4,0.02,0.12

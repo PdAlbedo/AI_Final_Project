@@ -1,0 +1,37 @@
+Name,Num of Dimensions,Linkage,Distance,Num of clusters,Silhouette Score,Calinski Harabasz Score,Davies-Bouldin Index,Runtime
+CC General,2,average,euclidean,1,,,,1.37
+CC General,2,average,manhattan,1,,,,1.29
+CC General,2,average,cosine,34,0.22,4256.2,3.28,1.95
+CC General,2,average,chebyshev,1,,,,2.14
+CC General,2,average,minkowski,1,,,,4.27
+CC General,2,average,mahalanobis,3698,0.4,248518.06,0.24,8.31
+COVID-19,2,average,euclidean,8,0.61,875.3,0.47,0.0
+COVID-19,2,average,manhattan,9,0.61,1089.96,0.47,0.0
+COVID-19,2,average,cosine,23,0.44,1023.06,0.86,0.01
+COVID-19,2,average,chebyshev,8,0.61,875.3,0.47,0.0
+COVID-19,2,average,minkowski,8,0.61,875.3,0.47,0.02
+COVID-19,2,average,mahalanobis,190,0.16,98851.35,0.08,0.06
+Credit Card,2,average,euclidean,3,0.73,1612.18,0.33,0.01
+Credit Card,2,average,manhattan,3,0.73,1612.18,0.33,0.01
+Credit Card,2,average,cosine,15,0.63,2672.72,0.68,0.02
+Credit Card,2,average,chebyshev,3,0.73,1612.18,0.33,0.02
+Credit Card,2,average,minkowski,3,0.73,1612.18,0.33,0.06
+Credit Card,2,average,mahalanobis,300,0.39,204317.73,0.22,0.14
+Mall Customer,2,average,euclidean,4,0.86,4191.69,0.28,0.0
+Mall Customer,2,average,manhattan,4,0.86,4191.69,0.28,0.0
+Mall Customer,2,average,cosine,9,0.8,8829.67,0.36,0.0
+Mall Customer,2,average,chebyshev,4,0.86,4191.69,0.28,0.0
+Mall Customer,2,average,minkowski,4,0.86,4191.69,0.28,0.01
+Mall Customer,2,average,mahalanobis,70,0.68,919744.28,0.16,0.03
+Sales Transactions,2,average,euclidean,1,,,,0.01
+Sales Transactions,2,average,manhattan,3,0.55,1110.61,0.52,0.02
+Sales Transactions,2,average,cosine,24,0.43,2832.75,0.73,0.03
+Sales Transactions,2,average,chebyshev,1,,,,0.02
+Sales Transactions,2,average,minkowski,1,,,,0.03
+Sales Transactions,2,average,mahalanobis,620,0.21,114707.97,0.13,0.17
+Wholesale,2,average,euclidean,3,0.58,790.56,0.56,0.01
+Wholesale,2,average,manhattan,5,0.55,1104.52,0.64,0.01
+Wholesale,2,average,cosine,31,0.25,382.7,1.35,0.01
+Wholesale,2,average,chebyshev,3,0.58,790.56,0.56,0.01
+Wholesale,2,average,minkowski,3,0.58,790.56,0.56,0.03
+Wholesale,2,average,mahalanobis,406,0.09,99926.97,0.05,0.11

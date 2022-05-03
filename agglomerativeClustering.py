@@ -27,35 +27,65 @@ def main():
     cc_df = model.copy()
     result_df, i, cc_df = datasetProcessing.show_result(cc_data, 'CC General', result_df, i, cc_df, 0)
     cc_df.to_csv('Datasets/Dataframes/CC_df.csv', index = False)
-    cc_df.to_csv('Datasets/Dataframes/CC_df_idx.csv', index = True)
+    # cc_df.to_csv('Datasets/Dataframes/CC_df_idx.csv', index = True)
     print('\n')
     covid_df = model.copy()
     result_df, i, covid_df = datasetProcessing.show_result(covid_data, 'COVID-19', result_df, i, covid_df, 0)
     covid_df.to_csv('Datasets/Dataframes/COVID_df.csv', index = False)
-    covid_df.to_csv('Datasets/Dataframes/COVID_df_idx.csv', index = True)
+    # covid_df.to_csv('Datasets/Dataframes/COVID_df_idx.csv', index = True)
     print('\n')
     cccd_df = model.copy()
     result_df, i, cccd_df = datasetProcessing.show_result(cccd_data, 'Credit Card', result_df, i, cccd_df, 0)
     cccd_df.to_csv('Datasets/Dataframes/Credit_Card_df.csv', index = False)
-    cccd_df.to_csv('Datasets/Dataframes/Credit_Card_df_idx.csv', index = True)
+    # cccd_df.to_csv('Datasets/Dataframes/Credit_Card_df_idx.csv', index = True)
     print('\n')
     mall_df = model.copy()
     result_df, i, mall_df = datasetProcessing.show_result(mall_data, 'Mall Customer', result_df, i, mall_df, 0)
     mall_df.to_csv('Datasets/Dataframes/Mall_df.csv', index = False)
-    mall_df.to_csv('Datasets/Dataframes/Mall_df_idx.csv', index = True)
+    # mall_df.to_csv('Datasets/Dataframes/Mall_df_idx.csv', index = True)
     print('\n')
     stc_df = model.copy()
     result_df, i, stc_df = datasetProcessing.show_result(stc_data, 'Sales Transactions', result_df, i, stc_df, 0)
     stc_df.to_csv('Datasets/Dataframes/Sales_Transactions_df.csv', index = False)
-    stc_df.to_csv('Datasets/Dataframes/Sales_Transactions_df_idx.csv', index = True)
+    # stc_df.to_csv('Datasets/Dataframes/Sales_Transactions_df_idx.csv', index = True)
     print('\n')
     wcd_df = model.copy()
     result_df, i, wcd_df = datasetProcessing.show_result(wcd_data, 'Wholesale', result_df, i, wcd_df, 0)
     wcd_df.to_csv('Datasets/Dataframes/Wholesale_df.csv', index = False)
-    wcd_df.to_csv('Datasets/Dataframes/Wholesale_df_idx.csv', index = True)
+    # wcd_df.to_csv('Datasets/Dataframes/Wholesale_df_idx.csv', index = True)
+    # result_df = pd.read_csv('Datasets/Dataframes/Results.csv')
+
+    is_passed = False
+    for linkage in ("ward", "average", "complete", "single"):
+        for dis_matrix in ("euclidean", "manhattan", "cosine", "chebyshev", "minkowski", "mahalanobis"):
+            if linkage != "ward":
+                is_passed = False
+            if is_passed:
+                continue
+            if linkage == "ward":
+                dis_matrix = "euclidean"
+                is_passed = True
+            csv_name = 'Datasets/Dataframes/Dim/' + linkage + '_' + dis_matrix + '.csv'
+            tmp_df = result_df[(result_df['Linkage'] == linkage) & (result_df['Distance'] == dis_matrix)]
+            tmp_df.to_csv(csv_name, index = False)
+
+    for dim in range(2, 5):
+        for dis_matrix in ("euclidean", "manhattan", "cosine", "chebyshev", "minkowski", "mahalanobis"):
+            csv_name = 'Datasets/Dataframes/Linkage/' + str(dim) + '_' + dis_matrix + '.csv'
+            tmp_df = result_df[(result_df['Num of Dimensions'] == dim) & (result_df['Distance'] == dis_matrix)]
+            tmp_df = tmp_df[['Name', 'Num of Dimensions', 'Distance', 'Linkage', 'Num of clusters',
+                             'Silhouette Score', 'Calinski Harabasz Score', 'Davies-Bouldin Index',
+                             'Runtime']]
+            tmp_df.to_csv(csv_name, index = False)
+
+    for dim in range(2, 5):
+        for linkage in ("ward", "average", "complete", "single"):
+            csv_name = 'Datasets/Dataframes/Dis/' + str(dim) + '_' + linkage + '.csv'
+            tmp_df = result_df[(result_df['Num of Dimensions'] == dim) & (result_df['Linkage'] == linkage)]
+            tmp_df.to_csv(csv_name, index = False)
 
     result_df.to_csv('Datasets/Dataframes/Results.csv', index = False)
-    result_df.to_csv('Datasets/Dataframes/Results_idx.csv', index = True)
+    # result_df.to_csv('Datasets/Dataframes/Results_idx.csv', index = True)
 
 
 if __name__ == '__main__':

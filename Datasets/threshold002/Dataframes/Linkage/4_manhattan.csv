@@ -1,0 +1,19 @@
+Name,Num of Dimensions,Distance,Linkage,Num of clusters,Silhouette Score,Calinski Harabasz Score,Davies-Bouldin Index,Runtime
+CC General,4,manhattan,average,1,,,,1.51
+CC General,4,manhattan,complete,1,,,,1.55
+CC General,4,manhattan,single,1,,,,0.28
+COVID-19,4,manhattan,average,26,0.47,252.72,0.6,0.01
+COVID-19,4,manhattan,complete,34,0.45,297.77,0.7,0.01
+COVID-19,4,manhattan,single,1,,,,0.0
+Credit Card,4,manhattan,average,3,0.47,314.83,1.03,0.01
+Credit Card,4,manhattan,complete,6,0.65,1246.46,0.56,0.01
+Credit Card,4,manhattan,single,1,,,,0.0
+Mall Customer,4,manhattan,average,10,0.7,1043.05,0.35,0.0
+Mall Customer,4,manhattan,complete,13,0.64,1277.36,0.4,0.0
+Mall Customer,4,manhattan,single,4,0.27,62.73,1.07,0.0
+Sales Transactions,4,manhattan,average,3,0.35,288.37,1.25,0.02
+Sales Transactions,4,manhattan,complete,12,0.36,511.72,0.91,0.02
+Sales Transactions,4,manhattan,single,1,,,,0.0
+Wholesale,4,manhattan,average,9,0.43,397.79,0.76,0.01
+Wholesale,4,manhattan,complete,18,0.44,506.79,0.76,0.01
+Wholesale,4,manhattan,single,1,,,,0.0

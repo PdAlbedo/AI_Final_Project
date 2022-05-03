@@ -1,0 +1,7 @@
+Name,Num of Dimensions,Linkage,Distance,Num of clusters,Silhouette Score,Calinski Harabasz Score,Davies-Bouldin Index,Runtime
+CC General,3,ward,euclidean,5,0.52,11284.95,0.81,2.34
+COVID-19,3,ward,euclidean,20,0.44,548.71,0.72,0.01
+Credit Card,3,ward,euclidean,8,0.7,6855.11,0.43,0.02
+Mall Customer,3,ward,euclidean,10,0.63,2610.04,0.44,0.0
+Sales Transactions,3,ward,euclidean,11,0.45,1394.4,0.72,0.02
+Wholesale,3,ward,euclidean,19,0.43,684.96,0.77,0.01

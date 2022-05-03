@@ -153,7 +153,7 @@ def show_result(df, name, results, i, loc_df, loc_i):
                     is_passed = True
                 t0 = time()
                 clustering = AgglomerativeClustering(affinity = dis_matrix, linkage = linkage,
-                                                     distance_threshold = 0.02, n_clusters = None)
+                                                     distance_threshold = 0.01, n_clusters = None)
                 if dis_matrix != "precomputed":
                     clustering.fit(embedded_df)
                     print('###########################################################')

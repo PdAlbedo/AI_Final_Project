@@ -1,0 +1,19 @@
+Name,Num of Dimensions,Distance,Linkage,Num of clusters,Silhouette Score,Calinski Harabasz Score,Davies-Bouldin Index,Runtime
+CC General,4,cosine,average,230,0.33,2077.62,0.88,2.37
+CC General,4,cosine,complete,411,0.32,2950.95,0.98,2.53
+CC General,4,cosine,single,18,-0.45,0.3,2.7,1.59
+COVID-19,4,cosine,average,52,0.43,238.01,0.46,0.01
+COVID-19,4,cosine,complete,64,0.4,328.7,0.54,0.01
+COVID-19,4,cosine,single,22,0.12,49.37,0.61,0.01
+Credit Card,4,cosine,average,23,0.55,2076.58,0.55,0.02
+Credit Card,4,cosine,complete,41,0.5,3255.99,0.71,0.02
+Credit Card,4,cosine,single,6,0.57,1210.29,0.46,0.01
+Mall Customer,4,cosine,average,14,0.64,990.73,0.34,0.0
+Mall Customer,4,cosine,complete,21,0.59,1549.46,0.41,0.01
+Mall Customer,4,cosine,single,9,0.55,409.97,0.32,0.0
+Sales Transactions,4,cosine,average,94,0.29,302.85,0.82,0.03
+Sales Transactions,4,cosine,complete,146,0.26,370.46,0.94,0.04
+Sales Transactions,4,cosine,single,5,-0.42,0.41,1.58,0.02
+Wholesale,4,cosine,average,68,0.38,337.06,0.64,0.02
+Wholesale,4,cosine,complete,91,0.38,428.95,0.66,0.02
+Wholesale,4,cosine,single,12,-0.46,0.75,1.8,0.01

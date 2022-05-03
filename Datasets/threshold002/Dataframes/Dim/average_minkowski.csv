@@ -1,0 +1,19 @@
+Name,Num of Dimensions,Linkage,Distance,Num of clusters,Silhouette Score,Calinski Harabasz Score,Davies-Bouldin Index,Runtime
+CC General,2,average,minkowski,1,,,,4.32
+CC General,3,average,minkowski,1,,,,4.64
+CC General,4,average,minkowski,1,,,,4.77
+COVID-19,2,average,minkowski,4,0.68,888.07,0.47,0.01
+COVID-19,3,average,minkowski,7,0.52,362.9,0.65,0.02
+COVID-19,4,average,minkowski,9,0.46,221.68,0.76,0.02
+Credit Card,2,average,minkowski,1,,,,0.03
+Credit Card,3,average,minkowski,2,0.58,336.75,0.39,0.04
+Credit Card,4,average,minkowski,2,0.49,224.48,0.47,0.04
+Mall Customer,2,average,minkowski,3,0.79,853.59,0.31,0.01
+Mall Customer,3,average,minkowski,5,0.73,685.4,0.34,0.01
+Mall Customer,4,average,minkowski,8,0.66,561.88,0.34,0.02
+Sales Transactions,2,average,minkowski,1,,,,0.04
+Sales Transactions,3,average,minkowski,1,,,,0.04
+Sales Transactions,4,average,minkowski,1,,,,0.04
+Wholesale,2,average,minkowski,1,,,,0.02
+Wholesale,3,average,minkowski,2,0.38,154.91,0.72,0.02
+Wholesale,4,average,minkowski,4,0.36,189.23,0.81,0.02
