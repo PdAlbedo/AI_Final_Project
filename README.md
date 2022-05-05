@@ -9,6 +9,7 @@ Platform: Win11, pycharm, py3.9
 - agglomerativeClustering.py: main body of processing data and compute results\
 - datasetProcessing.py: pre-processing datasets\
 - Results.txt: results computed\
+- Analysis.xlsx: information extracted for analysis\
 - Semester_Project_Proposal\
   - pdf files: past check points
 - CS5100_Semester_Project_Research
