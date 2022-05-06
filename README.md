@@ -1,4 +1,4 @@
-# Optimal Distance Measure for Agglomerative Hierarchical Clustering
+# The Effect of  Dimensionality in Affinity Choice for Agglomerative Hierarchical Clustering
 ## CS5100 Final Project
 
 [Github Page](https://github.com/PdAlbedo/AI_Final_Project)
